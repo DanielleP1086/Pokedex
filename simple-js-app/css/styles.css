@@ -1,1 +1,13 @@
-jjjj
+body {
+  background-color: #b4c8cf;
+}
+
+body {
+  font-family: 'Roboto', ital, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #0e2142;
+  align-items: center;
+  min-height: 100vh;
+  margin: 20px;
+}
