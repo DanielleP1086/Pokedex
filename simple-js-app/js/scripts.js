@@ -1,5 +1,5 @@
 let pokemonRepository = (function() {
-  let pokemonList = [
+  let repository = [
   {
     name: 'Wigglytuff',
     weight: 12,
@@ -17,26 +17,39 @@ let pokemonRepository = (function() {
   },
 ];
 
-function getAll() {
-  return pokemonList;
+  function add(pokemon){
+   repository.push(pokemon);
+ }
+  function getAll() {
+    return repository;
+  }
+function addListItem(pokemon){
+  let pokemonList = document.querySelector(".pokemon-list");
+  let listpokemon = document.createElement("li");
+  let button = document.createElement("button");
+  //add event listener
+  button.addEventListener('click', function () {
+  showDetails(pokemon)
+});
+  button.innerText = pokemon.name;
+  button.classList.add("button-class");
+  listpokemon.appendChild(button);
+  pokemonList.appendChild(listpokemon);
 }
+//callback to addEventListener
+function showDetails(pokemon){
+  console.log(pokemon.name);
+};
 
-function add(pokemon) {
-  pokemonList.push(pokemon);
-}
-  return {
+return {
+    add: add,
     getAll: getAll,
-    add: add
-    };
+    addListItem: addListItem
+  };
 })();
 
 
-pokemonRepository.getAll().forEach(function(pokemon) {
-  document.write(pokemon.name + " (weight:" + pokemon.weight + ") ");
-//add a conditional to highlight the biggest pokemon
-if (pokemon.weight >20){
-  document.write("-Wow! That's a big pokemon!");
-}
-//add line break after each iteration
-document.write('<br>');
+
+pokemonRepository.getAll().forEach(function (pokemon) {
+  pokemonRepository.addListItem(pokemon);
 });
