@@ -5,67 +5,16 @@ body {
 body {
   font-family: 'Roboto', ital, sans-serif;
   font-weight: 600;
-  font-size: 16px;
   color: #0e2142;
   align-items: center;
   min-height: 100vh;
   margin: 20px;
 }
 
-#modal-container {
-  display: none;
-}
-
-#modal-container.is-visible {
-  position: fixed;
-  padding: 20px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-
-  /* to show it above other content */
-  z-index: 999;
-
-  /* to allow scrolling if the screen is not high enough*/
-  overflow: auto;
-
-  /* this is used to center the modal */
-  display: grid;
-  text-align: center;
-}
-
-.modal {
-  margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
-  background: #fff;
-  padding: 15px;
-  width: 100%;
-  max-width: 700px;
-  text-align: left;
-}
-
-.modal-close {
-  float: right;
-  border: 0;
-  background: none;
-  color: #777;
-  text-decoration: underline;
-}
-
-.modal h1 {
-  margin-top: 0;
-}
-
-.modal p {
-  margin-bottom: 0;
-}
-
-.modal img {
-  display: block;
-  width: 100px;
-  height: 100px;
+.btn-primary {
+background-color: #041C3D;
+border: 50px;
+color: white;
+padding: 15px 32px;
+font-size: 16px;
 }
