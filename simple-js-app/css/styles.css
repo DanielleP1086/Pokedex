@@ -18,3 +18,8 @@ color: white;
 padding: 15px 32px;
 font-size: 16px;
 }
+
+.pokemon-list {
+  text-align: center;
+  list-style-type: none;
+}
