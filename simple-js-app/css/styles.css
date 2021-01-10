@@ -9,17 +9,41 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 20px;
+  padding-top: 70px;
+}
+
+.title {
+  text-decoration: underline;
+  margin-left:20px;
+  margin-right:50px;
+}
+
+.navbar-nav {
+  justify-content:flex-end;
+
 }
 
 .btn-primary {
 background-color: #041C3D;
-border: 50px;
+border: 2px;
 color: white;
 padding: 15px 32px;
 font-size: 16px;
+margin: 4px 2px;
+transition-duration: 0.4s;
+cursor: pointer;
+text-transform: uppercase;
+border-radius: 4px;
+width: 250px;
 }
 
 .pokemon-list {
   text-align: center;
   list-style-type: none;
+}
+
+.about_text {
+  border: 2px;
+  padding: 30px;
+  display: inline-block;
 }
